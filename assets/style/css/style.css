@@ -1,246 +1,365 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+}
 
 h1, h2, h3, h4, h5 {
-  padding: 1em; }
+  padding: 1em;
+}
 
 h2 {
   font-size: 1.8em;
   border-left: 3px solid #f9d00f;
   margin-bottom: 1em;
-  margin-left: 0.5em; }
+  margin-left: 0.5em;
+}
 
 h3 {
   font-size: 1.4em;
   margin-left: 1em;
-  border-left: 3px solid #2260a8; }
+  border-left: 3px solid #2260a8;
+}
 
 h4 {
   font-size: 1.2em;
-  border-left: none; }
+  border-left: none;
+}
 
 button, p, a {
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 button {
-  background-color: #f9d00f; }
+  background-color: #f9d00f;
+}
 
 ul {
   list-style-type: none;
-  display: flex; }
-  ul li {
-    padding: 1em; }
-    ul li button {
-      padding: 1em 2em; }
+  display: flex;
+}
+ul li {
+  padding: 1em;
+}
+ul li button {
+  padding: 1em 2em;
+}
 
 a {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /*Header Style*/
 nav ul {
   display: flex;
   justify-content: space-between;
-  padding: 0 1em; }
-  nav ul li {
-    transition: 0.5s all ease; }
-    nav ul li a {
-      color: #f9d00f; }
-  nav ul li:hover {
-    background-color: #f9d00f; }
-    nav ul li:hover a {
-      color: black; }
+  padding: 0 1em;
+}
+nav ul li {
+  transition: 0.5s all ease;
+}
+nav ul li a {
+  color: #f9d00f;
+}
+nav ul li:hover {
+  background-color: #f9d00f;
+}
+nav ul li:hover a {
+  color: black;
+}
 
 header .headerTitle {
   position: absolute;
   width: 100%;
   bottom: 25vh;
-  color: white; }
-  header .headerTitle h1, header .headerTitle h2 {
-    border-left: none;
-    padding: 0;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 0; }
-  header .headerTitle h1 {
-    font-size: 7rem;
-    letter-spacing: 1em;
-    padding-left: 0.3em; }
+  color: white;
+}
+header .headerTitle h1, header .headerTitle h2 {
+  border-left: none;
+  padding: 0;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0;
+}
+header .headerTitle h1 {
+  font-size: 7rem;
+  letter-spacing: 1em;
+  padding-left: 0.3em;
+}
 header .backstretch {
   width: 100%;
-  height: 80vh; }
-  header .backstretch img {
-    filter: brightness(0.6);
-    position: relative; }
+  height: 80vh;
+}
+header .backstretch img {
+  filter: brightness(0.6);
+  position: relative;
+}
 
 /*General section Style*/
 main {
-  width: 100%; }
+  width: 100%;
+}
 
 section {
   padding-top: 2em;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+}
 
 footer {
   display: flex;
   justify-content: space-around;
   background-color: black;
   color: white;
-  padding: 1em; }
-  footer a {
-    color: #f9d00f; }
-  footer div {
-    display: flex; }
-    footer div ul {
-      flex-direction: column;
-      padding-left: 0.5em; }
-  footer li {
-    padding: 0; }
+  padding: 1em;
+}
+footer a {
+  color: #f9d00f;
+}
+footer div {
+  display: flex;
+}
+footer div ul {
+  flex-direction: column;
+  padding-left: 0.5em;
+}
+footer li {
+  padding: 0;
+}
 
 /* Presentation Style */
 #presentation {
   background-color: black;
   color: white;
-  border-top: 3px solid #2260a8; }
+  border-top: 3px solid #2260a8;
+}
 
 #presentationWrapper {
-  display: flex; }
-  #presentationWrapper p {
-    margin-left: 3em; }
-  #presentationWrapper h4 {
-    margin-left: 1.5em; }
-  #presentationWrapper .presentationNav {
-    margin-left: 2em; }
-    #presentationWrapper .presentationNav ul {
-      display: flex;
-      flex-direction: column; }
-      #presentationWrapper .presentationNav ul button {
-        width: 100%;
-        border: none;
-        padding: 0.3em 1em; }
-      #presentationWrapper .presentationNav ul li {
-        padding: 0.3em 1em; }
+  display: flex;
+}
+#presentationWrapper p {
+  margin-left: 3em;
+}
+#presentationWrapper h4 {
+  margin-left: 1.5em;
+}
+#presentationWrapper .presentationNav {
+  margin-left: 2em;
+}
+#presentationWrapper .presentationNav ul {
+  display: flex;
+  flex-direction: column;
+}
+#presentationWrapper .presentationNav ul button {
+  width: 100%;
+  border: none;
+  padding: 0.3em 1em;
+}
+#presentationWrapper .presentationNav ul li {
+  padding: 0.3em 1em;
+}
 
 /*Biography section Style*/
 #biographie, #contact {
-  background-color: #f9d00f; }
-  #biographie h2, #contact h2 {
-    border-left: 3px solid black; }
+  background-color: #f9d00f;
+}
+#biographie h2, #contact h2 {
+  border-left: 3px solid black;
+}
 
 .js-buttonLikeDebut, .js-buttonLikeMiddle, .js-buttonLikeModerne {
   cursor: pointer;
-  margin-right: 1em; }
+  margin-right: 1em;
+}
 
 .js-displayClickDebut, .js-displayClickMiddle, .js-displayClickModerne {
-  padding: 0 1em; }
+  padding: 0 1em;
+}
 
 .biographieNav {
   display: flex;
-  margin-left: 8em; }
+  margin-left: 8em;
+}
 
 /* Photographie section style */
 #photographie {
   background-color: black;
   color: white;
-  position: relative; }
-  #photographie #carousel {
-    width: 70%;
-    height: 450px;
-    margin-left: calc(50% - 35%);
-    overflow: hidden;
-    background: black; }
-  #photographie #carousel img {
-    visibility: hidden;
-    /* hide images until carousel can handle them */ }
-  #photographie #prev, #photographie #next {
-    position: absolute;
-    color: #f9d00f;
-    top: 15em; }
-  #photographie #prev {
-    left: 5%; }
-  #photographie #next {
-    right: 5%; }
-  #photographie .image {
-    display: inline-block;
-    width: 50px; }
+  position: relative;
+}
+#photographie #gallerieResponsive {
+  display: none;
+}
+#photographie #carousel {
+  width: 70%;
+  height: 450px;
+  margin-left: calc(50% - 35%);
+  overflow: hidden;
+  background: black;
+}
+#photographie #carousel img {
+  visibility: hidden;
+  /* hide images until carousel can handle them */
+}
+#photographie #prev, #photographie #next {
+  position: absolute;
+  color: #f9d00f;
+  top: 15em;
+}
+#photographie #prev {
+  left: 5%;
+}
+#photographie #next {
+  right: 5%;
+}
+#photographie .image {
+  display: inline-block;
+  width: 50px;
+}
+
+/* Goodies section style */
+#goodies .goodiesWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+#goodies .goodiesWrapper .goodiesCard {
+  color: white;
+  width: 20%;
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+}
+#goodies .goodiesWrapper .goodiesCard img {
+  width: 100%;
+}
+#goodies .goodiesWrapper .goodiesCard input {
+  border: none;
+  padding-left: 10px;
+  width: 40px;
+}
+#goodies button {
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: #2260a8;
+  width: 10%;
+  margin-top: 20px;
+  margin-left: calc(50% - 5%);
+  cursor: pointer;
+}
 
 /* contact section style */
 #contact {
   color: black;
   border-top: 3px solid #2260a8;
-  border-bottom: 3px solid #2260a8; }
-  #contact button {
-    border: none;
-    padding: 0.5em;
-    margin-top: 0.5em; }
-  #contact form {
-    background-color: black;
-    color: #f9d00f;
-    padding: 2em 1em;
-    width: 30%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    position: relative; }
-    #contact form input {
-      margin: 0.5em 0; }
-  #contact form:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 80px;
-    height: 25px;
-    background-color: #f9d00f; }
-  #contact form:after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 80px;
-    height: 25px;
-    background-color: #f9d00f; }
+  border-bottom: 3px solid #2260a8;
+}
+#contact button {
+  border: none;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+#contact form {
+  background-color: black;
+  color: #f9d00f;
+  padding: 2em 1em;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#contact form input {
+  margin: 0.5em 0;
+}
+#contact form:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 80px;
+  height: 25px;
+  background-color: #f9d00f;
+}
+#contact form:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+  height: 25px;
+  background-color: #f9d00f;
+}
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 900px) {
   header .headerTitle h1 {
     font-size: 7rem;
     letter-spacing: 0.5em;
-    padding-left: 0.3em; }
+    padding-left: 0.3em;
+  }
 
   #contact form {
-    width: 70%; } }
+    width: 70%;
+  }
+
+  #photographie #carousel, #photographie .prev, #photographie .next {
+    display: none;
+  }
+  #photographie #gallerieResponsive {
+    display: block;
+    width: 90%;
+    margin-left: calc(50% - 45%);
+  }
+  #photographie #gallerieResponsive img {
+    width: 49%;
+  }
+
+  #goodies button {
+    width: 20%;
+  }
+}
 @media (max-width: 600px) {
   header .headerTitle h1 {
     font-size: 7rem;
     letter-spacing: 0.1em;
-    padding-left: 0; }
+    padding-left: 0;
+  }
   header nav {
-    background-color: black; }
-    header nav ul {
-      padding: 0; }
-      header nav ul li {
-        padding: 1em 0.5em; }
+    background-color: black;
+  }
+  header nav ul {
+    padding: 0;
+  }
+  header nav ul li {
+    padding: 1em 0.5em;
+  }
 
   #presentationWrapper {
-    flex-direction: column; }
-    #presentationWrapper .presentationNav {
-      margin-left: 0; }
-      #presentationWrapper .presentationNav ul {
-        flex-direction: row;
-        justify-content: space-around; }
-        #presentationWrapper .presentationNav ul li {
-          padding: 0; }
+    flex-direction: column;
+  }
+  #presentationWrapper .presentationNav {
+    margin-left: 0;
+  }
+  #presentationWrapper .presentationNav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #presentationWrapper .presentationNav ul li {
+    padding: 0;
+  }
 
   #biographie .biographieNav {
-    margin-left: 0; }
+    margin-left: 0;
+  }
 
   footer {
-    font-size: 0.85em; }
+    font-size: 0.85em;
+  }
 
-  .js-buttonLikeModerne {
-    margin-right: 0; } }
+  .js-buttonLikeModerne, .js-buttonlikeMiddle, .js-buttonlikeDebut {
+    margin-right: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

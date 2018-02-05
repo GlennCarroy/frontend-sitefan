@@ -202,11 +202,13 @@ footer {
 	background-color: black;
 	color: white;
 	position: relative;
+	#gallerieResponsive {
+		display: none;
+	}
 	#carousel {
 	  width:70%;
 	  height:450px;
 	  margin-left: calc(50% - 35%);
-	  // clear:both;
 	  overflow:hidden;
 	  background:black;
 	}
@@ -227,6 +229,40 @@ footer {
 	.image {
 	  display: inline-block;
 	  width: 50px;
+	}
+}
+
+/* Goodies section style */
+
+#goodies {
+	.goodiesWrapper {
+		display: flex; 
+		justify-content: space-around;
+		.goodiesCard {
+			color: white;
+			width: 20%;
+			background-color: black;
+			text-align: center;
+			padding: 5px;
+			img {
+				width: 100%;
+			}
+			input {
+				border: none;
+				padding-left: 10px;
+				width: 40px;
+			}
+		}
+	}
+	button {
+		border: none; 
+		padding: 10px;
+		color: white;
+		background-color: #2260a8;
+		width: 10%;	
+		margin-top: 20px;
+		margin-left: calc(50% - 5%);
+		cursor: pointer;
 	}
 }
 
@@ -292,6 +328,24 @@ footer {
 		width: 70%;
 		}
 	}
+	#photographie {
+		#carousel, .prev , .next {
+			display: none;
+		}
+		#gallerieResponsive {
+		display: block;
+		width: 90%;
+		margin-left: calc(50% - 45%);
+		img {
+			width: 49%;
+		}
+	}
+	}
+	#goodies {
+		button {
+			width: 20%;
+		}
+	}
 }
 
 @media (max-width: 600px) {
@@ -334,7 +388,7 @@ footer {
 	footer {
 		font-size: 0.85em;
 	}
-	.js-buttonLikeModerne {
+	.js-buttonLikeModerne, .js-buttonlikeMiddle, .js-buttonlikeDebut {
 		margin-right: 0;
 	}
 }
