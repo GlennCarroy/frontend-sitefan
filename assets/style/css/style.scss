@@ -213,6 +213,9 @@ footer {
 	#carousel img {
   		visibility:hidden; /* hide images until carousel can handle them */
 	}
+	#carousel p {
+		color: #f9d00f;
+	}
 	#prev, #next {
 	  position: absolute;
 	  color: #f9d00f;

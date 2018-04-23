@@ -29,6 +29,8 @@ button {
 
 ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   ul li {
     padding: 1em; }
@@ -41,10 +43,15 @@ a {
 
 /*Header Style*/
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 1em; }
   nav ul li {
+    -webkit-transition: 0.5s all ease;
     transition: 0.5s all ease; }
     nav ul li a {
       color: #f9d00f; }
@@ -72,7 +79,8 @@ header .backstretch {
   width: 100%;
   height: 80vh; }
   header .backstretch img {
-    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+            filter: brightness(0.6);
     position: relative; }
 
 /*General section Style*/
@@ -84,17 +92,25 @@ section {
   padding-bottom: 1em; }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: black;
   color: white;
   padding: 1em; }
   footer a {
     color: #f9d00f; }
   footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     footer div ul {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       padding-left: 0.5em; }
   footer li {
     padding: 0; }
@@ -106,6 +122,8 @@ footer {
   border-top: 3px solid #2260a8; }
 
 #presentationWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   #presentationWrapper p {
     margin-left: 3em; }
@@ -114,8 +132,13 @@ footer {
   #presentationWrapper .presentationNav {
     margin-left: 2em; }
     #presentationWrapper .presentationNav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
       #presentationWrapper .presentationNav ul button {
         width: 100%;
         border: none;
@@ -137,6 +160,8 @@ footer {
   padding: 0 1em; }
 
 .biographieNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 8em; }
 
@@ -154,6 +179,8 @@ footer {
   #photographie #carousel img {
     visibility: hidden;
     /* hide images until carousel can handle them */ }
+  #photographie #carousel p {
+    color: #f9d00f; }
   #photographie #prev, #photographie #next {
     position: absolute;
     color: #f9d00f;
@@ -181,8 +208,13 @@ footer {
     padding: 2em 1em;
     width: 30%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative; }
     #contact form input {
       margin: 0.5em 0; }
@@ -225,12 +257,19 @@ footer {
         padding: 1em 0.5em; }
 
   #presentationWrapper {
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     #presentationWrapper .presentationNav {
       margin-left: 0; }
       #presentationWrapper .presentationNav ul {
-        flex-direction: row;
-        justify-content: space-around; }
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
         #presentationWrapper .presentationNav ul li {
           padding: 0; }
 
